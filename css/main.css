@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+}
+::selection{
+    background-color: #b85c38;
+    color: white;
+}
+
+body{
+    background: url(../images/pie-jam-bowl-copy-space.jpg);
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: rgb(58, 58, 58);
+}
+
+.name-and-description h1 {
+    font-family: Pacifico;
+    font-size: 3.25em;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #b85c38;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.329);
+}
+main {
+    margin: 2rem 5rem;
+}
+.name-and-description p{
+    font-size: 1.25em;
+    line-height: 1.6;
+}
+
+.discount-items img{
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.736);
+    user-select: none;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.discount-items img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px #b85c38;
+}
+
+.discount-items{
+    margin: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discount-items .row{
+    display: flex;
+    gap: 15px;
+}
+
+.item{
+    position: relative;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.discount{
+    background: #b85c38;
+    font-family: Pacifico;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    cursor: default;
+    user-select: none;
+}
+.sale{
+    background: #b85c38;
+    font-size: 1em;
+    color: white;
+    border-radius: 50%;
+    padding: .25rem;
+
+
+}
